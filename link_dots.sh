@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOTS="/Users/david/@/dot"
+DOTS="~/@/dot"
 
 if [ ! -d "$DOTS" ]; then
   echo "Error: The source directory $DOTS does not exist."
