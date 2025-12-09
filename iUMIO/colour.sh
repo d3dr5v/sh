@@ -27,4 +27,4 @@ case "$session_name" in
         ;;
 esac
 
-sed "s/^foreground = '.*'/foreground = '$foreground_color'/" ~/@/dot/DRl8I/.alacritty.toml
+sed -i "s/^foreground = '.*'/foreground = '$foreground_color'/" ~/@/dot/DRl8I/.alacritty.toml
