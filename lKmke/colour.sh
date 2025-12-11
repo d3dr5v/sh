@@ -2,7 +2,7 @@
 
 DEFAULT_COLOR="#f5f3f4"
 
-session_name=$(/nix/store/0pbhaz48q3cqjwgxsvi3f5niqdl98z9z-tmux-3.5a/bin/tmux display-message -p '#S')
+session_name=$(/nix/store/xj74klp080haf36immcrkdph6hbs4l91-tmux-3.6a/bin/tmux display-message -p '#S')
 
 echo "session_name: $session_name"
 

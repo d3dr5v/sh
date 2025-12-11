@@ -3,7 +3,7 @@
 timew_total=$(timew | grep "Total" | awk '{print $2}')
 
 if [ -n "$timew_total" ]; then
-    timew_display="$timew_total · "
+    timew_display="$timew_total "
 else
     timew_display=""
 fi
@@ -14,4 +14,6 @@ current_time=$(date '+%d/%m %H:%M')
 
 relay=$(/usr/local/bin/mullvad status | grep "Relay:" | awk '{print $2}')
 
-echo "$relay · $timew_display$cpu_usage · $current_time"
+memory_usage=$(vm_stat | awk '/Pages free:/{free=$3} /Pages active:/{active=$3} END {printf "%.2f%%", (active/(active+free))*100}')
+
+echo "$relay $timew_display$current_time $cpu_usage $memory_usage"
