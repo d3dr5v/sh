@@ -1,3 +1,6 @@
+#!/bin/bash
+
+# darwin
 
 echo "Linking home directory..."
 

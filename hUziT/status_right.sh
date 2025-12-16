@@ -28,4 +28,6 @@ if [[ ${#current_path} -gt 20 ]]; then
   current_path=$(echo "$current_path" | rev | cut -d'/' -f-2 | rev)
 fi
 
-echo "$current_path $relay $timew_display$current_time $cpu_usage $memory_usage"
+process_count=$(ps -e | wc -l)
+
+echo "$process_count $current_path $relay $timew_display$current_time $cpu_usage $memory_usage"

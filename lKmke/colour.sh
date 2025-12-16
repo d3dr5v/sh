@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# darwin
+
 DEFAULT_COLOR="#f5f3f4"
 
 session_name=$(/nix/store/xj74klp080haf36immcrkdph6hbs4l91-tmux-3.6a/bin/tmux display-message -p '#S')

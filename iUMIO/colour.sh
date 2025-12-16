@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# arch
+
 DEFAULT_COLOR="#f5f3f4"
 
 session_name=$(/nix/store/8vwll24rhnizhrpa79lksk8jd8chzsn9-tmux-3.5a/bin/tmux display-message -p '#S')

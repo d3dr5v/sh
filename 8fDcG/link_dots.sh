@@ -1,3 +1,7 @@
+#!/bin/bash
+
+# arch
+
 echo "Linking home directory..."
 
 ln -sf ~/@/dot/CykmA/.zshrc ~/
