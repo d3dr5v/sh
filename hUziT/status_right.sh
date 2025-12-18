@@ -30,4 +30,4 @@ fi
 
 process_count=$(ps -e | wc -l)
 
-echo "$process_count $current_path $relay $timew_display$current_time $cpu_usage $memory_usage"
+echo "#[fg=red]$process_count #[fg=orange]$current_path #[fg=yellow]$relay #[fg=green]$timew_display#[fg=blue]$current_time #[fg=indigo]$cpu_usage #[fg=violet]$memory_usage"
