@@ -24,6 +24,9 @@ case "$session_name" in
     "p")
         foreground_color="#CBA6E3" # purple
         ;;
+    "o")
+        foreground_color="#FFA500" # orange
+        ;;
     *)
         foreground_color="$DEFAULT_COLOR"
         ;;

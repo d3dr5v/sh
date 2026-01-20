@@ -28,6 +28,6 @@ if [[ ${#current_path} -gt 20 ]]; then
   current_path=$(echo "$current_path" | rev | cut -d'/' -f-2 | rev)
 fi
 
-process_count=$(ps -e | wc -l)
+battery="$(pmset -g batt | grep -Eo "\d+%" | cut -d% -f1)%"
 
-echo "#[fg=red]$process_count #[fg=orange]$current_path #[fg=yellow]$relay #[fg=green]$timew_display#[fg=blue]$current_time #[fg=indigo]$cpu_usage #[fg=violet]$memory_usage"
+echo "#[fg=white]$timew_display#[fg=red]$current_path #[fg=yellow]$relay #[fg=green]$battery #[fg=coral]$cpu_usage #[fg=blue]$memory_usage #[fg=orange]$current_time"

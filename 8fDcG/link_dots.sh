@@ -32,3 +32,6 @@ ln -sf ~/@/vim/SAeMS/purple.vim ~/.vim/colors/
 ln -sf ~/@/vim/V4VVM/red.vim ~/.vim/colors/
 ln -sf ~/@/vim/VTsW6/white.vim ~/.vim/colors/
 ln -sf ~/@/vim/WlSj1/yellow.vim ~/.vim/colors/
+ln -sf ~/@/vim/WlSj1/yellow.vim ~/.vim/colors/
+ln -sf ~/@/vim/Z5lcZ/orange.vim ~/.vim/colors/
+

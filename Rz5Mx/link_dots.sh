@@ -8,6 +8,7 @@ ln -sf ~/@/dot/yKxro/.zshrc ~/
 ln -sf ~/@/dot/Oichl/.alacritty.toml ~/
 ln -sf ~/@/dot/fEYjd/.gitconfig ~/
 ln -sf ~/@/dot/C3FkS/.tmux.conf ~/
+ln -sf ~/@/dot/oP17B/.emacs ~/
 
 echo "Linking .config directory..."
 
