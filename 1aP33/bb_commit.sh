@@ -24,7 +24,7 @@ else
     LAST_LINE=$(tail -n 1 "$TIMESHEETS")
 
     # Append new commit to existing commits
-    NEW_COMMITS="${LAST_LINE} | ${COMMIT_MSG}"
+    NEW_COMMITS="${LAST_LINE}. ${COMMIT_MSG}"
 
     # Remove last line
     sed -i '' -e '$ d' "$TIMESHEETS"
